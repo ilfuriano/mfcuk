@@ -6,6 +6,23 @@ Compiling:
     autoconf
     ./configure
     make
+    
+Compiling instrucions from mailing list:
+    cd mfcuk
+    sudo libtoolize
+    sudo aclocal
+    sudo autoconf
+    sudo autoheader
+    sudo automake --add-missing
+    sudo automake
+    sudo autoreconf -vis
+    sudo ./configure
+    sudo make
+    sudo make install
+
+    To make it work,
+
+    sudo mfcuk -C -R 0:A -w 6 -v 3
 
 Running (most basic):
     ./mfcuk -C -R 0:A -v 2
